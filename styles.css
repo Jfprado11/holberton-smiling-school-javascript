@@ -137,12 +137,37 @@ ul.navbar-nav li a:hover {
   top: 65px;
 }
 
+.car-inner-container .carousel-item p {
+  width: 85%;
+}
+
 .img-car {
   margin-bottom: 12rem;
 }
 
 .info-car b {
   font-size: 2rem;
+}
+
+/* loader
+-------------------------*/
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #c271ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Carousel Popular videos sectios
