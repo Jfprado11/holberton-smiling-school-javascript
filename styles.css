@@ -1,0 +1,400 @@
+/* giving some style to the design */
+
+/* Variables
+==============================================*/
+
+:root {
+  /* colors
+    ----------------------------*/
+  --primary-color: #c271ff;
+  --secondary-color: #071629;
+
+  --opacity-hover: 0.9;
+
+  /* Font
+    ----------------------------*/
+  --font-primary: Source Sans Pro;
+  --font-sm: 1.2rem;
+  --font-md: 1.6rem;
+}
+
+/* base
+  ==============================================*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-md);
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+small {
+  font-size: 1.2rem;
+  line-height: 15px;
+  mix-blend-mode: normal;
+  opacity: 0.35;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  font-size: 1.4rem;
+  border-radius: 2.2rem;
+  border: none;
+  width: 16.2rem;
+  height: 4.4rem;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--primary-color);
+  opacity: var(--opacity-hover);
+  border: none;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Header
+  ==============================================*/
+
+/* Logo
+  ----------------------*/
+
+.logo-container {
+  width: 16.8rem;
+}
+
+.logo-face img {
+  width: 3rem;
+}
+
+.logo-letter img {
+  width: 11.1rem;
+}
+
+/* Navbar
+  -----------------------*/
+ul.navbar-nav li {
+  font-size: var(--font-sm);
+}
+
+ul.navbar-nav li a:hover {
+  opacity: var(--opacity-hover);
+}
+
+.holberton_school-icon-menu {
+  font-size: 2rem;
+}
+
+/* SECTION hero
+  ==================================================*/
+.hero-bg {
+  margin-top: -7rem;
+  background-image: url("./images/pic_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.conatiner-hero {
+  padding: 22rem 0 9.8rem;
+}
+
+.big-title {
+  font-size: 12rem;
+}
+.s-letters {
+  width: 25%;
+}
+.bold-title {
+  color: var(--primary-color);
+}
+.lower-hero {
+  margin-top: 16rem;
+}
+.grid-hero {
+  width: 15rem;
+}
+.lower-hero h2 {
+  margin-bottom: 8rem;
+}
+
+/* Carousel SECTION
+  ================================================*/
+.carousel-section,
+.car-inner-container .carousel-item {
+  background: #c271ff;
+}
+
+.car-inner-container .carousel-item {
+  left: 79px;
+  top: 65px;
+}
+
+.img-car {
+  margin-bottom: 12rem;
+}
+
+.info-car b {
+  font-size: 2rem;
+}
+
+/* Carousel Popular videos sectios
+  ================================================*/
+.popular-video-section h2 {
+  margin: 8.3rem 0 7rem;
+}
+
+.card {
+  /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+  border: none;
+  border-radius: 0;
+}
+.card-body {
+  font-size: 1.4rem;
+}
+.card-text {
+  color: rgba(7, 22, 41, 0.5);
+}
+.card-bold-text {
+  color: var(--primary-color);
+}
+.img-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-video::before {
+  content: "";
+  width: 6.4rem;
+  height: 6.4rem;
+  position: absolute;
+  background-image: url("images/play.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 2rem;
+}
+
+/* Membership Section
+  ================================*/
+.membership-section {
+  background-color: var(--secondary-color);
+}
+.membership-section h2 {
+  margin: 5rem 0 5.8rem;
+}
+.membership-text {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* Lastest videos Sections
+  =======================================*/
+.lastest-video-section h2 {
+  margin: 8.3rem 0 7rem;
+}
+
+/* Footer
+  ========================================*/
+footer {
+  background-color: var(--secondary-color);
+}
+
+.social-media-container a:hover,
+.social-media-container a:active {
+  text-decoration: none;
+}
+
+.media-logo {
+  font-size: 3rem;
+}
+/* Pricing
+  ===============================*/
+.body-pricing {
+  margin: -3.5rem 0 0;
+}
+
+.body-pricing header {
+  padding: 3rem 0 0;
+}
+
+/* header / section hero
+  ========================*/
+.wrapper-header {
+  background-image: url("/images/pic_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-pricing {
+  margin-top: 15rem;
+}
+.hero-pricing h1 {
+  font-size: 3.2rem;
+}
+
+.big-text {
+  font-size: 6rem;
+  margin: 7rem 0 0;
+}
+
+.container-2 {
+  position: absolute;
+}
+
+/* pricing grid
+  -------------------------------------*/
+.text-price {
+  font-size: 4.4rem;
+}
+.check-icon {
+  color: #82d24f;
+  font-size: 2.8rem;
+  margin-left: 7rem;
+}
+
+/* FAQ grid
+  ------------------------------------------*/
+.text-FAQ {
+  color: rgba(7, 22, 41, 0.5016);
+}
+/* COurses page
+  ========================================*/
+.wrapper-header-courses {
+  background-image: url("/images/pic_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-courses-sect h1 {
+  font-size: 3.2rem;
+}
+
+/* form-section
+  ---------------------------------*/
+
+.form-section {
+  background: rgba(194, 113, 255, 1);
+}
+
+.form-section label {
+  font-size: 1.2rem;
+  line-height: 15.08px;
+}
+
+.form-section input {
+  opacity: 0.25;
+  border-radius: 3px 3px 0px 0px;
+  height: 51px;
+  font-size: 2.3rem;
+}
+.icon-container {
+  background-color: #ffffff;
+  opacity: 0.25;
+}
+.icon-search {
+  color: grey !important;
+  font-size: 2rem;
+}
+option:hover {
+  color: #c271ff;
+}
+
+.custom-select {
+  appearance: none;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  height: 51px;
+  font-size: 2.3rem;
+}
+.inputs-borders {
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Grid of videos
+  ------------------------------------------*/
+.videos-number {
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: rgba(7, 22, 41, 0.296247);
+}
+
+/* RESPONSIVE 992
+  ================================================*/
+
+@media (max-width: 992px) {
+  /*carousel
+    ---------------------------------------*/
+  .car-inner-container .carousel-item {
+    left: 0;
+    top: 65px;
+  }
+  .img-car {
+    position: relative;
+    left: 181px;
+    top: 13px;
+  }
+  .info-car {
+    position: relative;
+    left: -43px;
+    top: -61px;
+  }
+}
+/* RESPONSIVE 768
+  ================================================*/
+
+@media (max-width: 768px) {
+  /* HERO section
+    -------------------------------*/
+  .upper-hero .big-title {
+    font-size: 7.6rem;
+  }
+  .s-letters {
+    width: 50%;
+  }
+  /* carousel
+    -----------------------------------------*/
+  .car-inner-container .carousel-item {
+    margin-left: 0 !important;
+  }
+  .img-car {
+    left: 117px;
+  }
+}
+
+/* RESPONSIVE 576
+  ================================================*/
+
+/*REsponsive logo
+  ---------------------------*/
+@media (max-width: 576px) {
+  .hero-bg {
+    margin-top: -17rem;
+    background-position: -12rem;
+  }
+  /* carousel
+    ------------------------------*/
+  .car-inner-container {
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .img-car {
+    left: 70px;
+  }
+  /*Pricing Table
+    --------------------------------*/
+  .buttons-price button {
+    width: 90%;
+  }
+  .check-icon {
+    margin-left: 2rem;
+  }
+}
