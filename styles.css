@@ -210,6 +210,44 @@ ul.navbar-nav li a:hover {
   width: 2rem;
 }
 
+/* Making the carsoul to slide one by one
+-----------------------*/
+
+@media (max-width: 768px) {
+  .car-slides .carsoul-videos .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .car-slides .carsoul-videos .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.car-slides .carsoul-videos .carousel-inner .carousel-item.active,
+.car-slides .carsoul-videos .carousel-inner .carousel-item-next,
+.car-slides .carsoul-videos .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+  .car-slides .carousel-inner .carousel-item-right.active,
+  .car-slides .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .car-slides .carousel-inner .carousel-item-left.active,
+  .car-slides .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.car-slides .carousel-inner .carousel-item-right,
+.car-slides .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+/*end of the carsoul*/
+
 /* Membership Section
   ================================*/
 .membership-section {
